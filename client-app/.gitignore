@@ -1,28 +1,15 @@
-.idea/
-.git/
-.vscode/
-.vs/
-bin/
-obj/
-appsettings.json
-*.db
-appsettings.Development.json
-
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
-/client-app/node_modules
 /.pnp
-/client-app/.pnp
 .pnp.js
 
 # testing
 /coverage
-/client-app/coverage
 
 # production
 /build
-/client-app/build
 
 # misc
 .DS_Store
@@ -30,7 +17,6 @@ appsettings.Development.json
 .env.development.local
 .env.test.local
 .env.production.local
-.env
 
 npm-debug.log*
 yarn-debug.log*

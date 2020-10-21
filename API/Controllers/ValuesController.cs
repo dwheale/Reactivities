@@ -24,6 +24,7 @@ namespace API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Value>>> Get()
         {
+            Console.WriteLine(DateTime.Now + " /api/values");
             var values = await _context.Values.ToListAsync();
             return Ok(values);
         }
@@ -32,6 +33,7 @@ namespace API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Value>> Get(int id)
         {
+            Console.WriteLine(DateTime.Now + $" /api/values/{id.ToString()}");
             // ReSharper disable once HeapView.BoxingAllocation
             var value = await _context.Values.FindAsync(id);
             return Ok(value);
